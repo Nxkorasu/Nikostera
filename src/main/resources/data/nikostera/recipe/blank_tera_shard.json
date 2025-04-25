@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IGI",
+    "GDG",
+    "IGI"
+  ],
+  "key": {
+    "D": {
+      "item": "cobblemon:diamond"
+    },
+    "I": {
+      "item": "minecraft:glass"
+    },
+    "G": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "result": {
+    "id": "zcrystals:blank_tera_shard",
+    "count": 1
+  }
+}
