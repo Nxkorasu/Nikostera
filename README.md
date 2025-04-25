@@ -1,2 +1,72 @@
-# Nikostera
-Addon mod for cobblemon that implements Terastalization
+# Niko's Tera
+
+**Addon mod for [Cobblemon](https://cobblemon.org/)** that implements **Terastalization**, fully server-sided and compatible with client-only resource packs.
+
+---
+
+## ✨ Features
+
+### 🔷 Tera Glow
+Displays a glowing visual effect when a Pokémon is under the **Terastal Effect**.
+
+---
+
+### 🔮 Tera Orb
+
+Used to obtain the ability to **Terastalize**.
+
+![Tera Orb](https://i.imgur.com/uD5o8BJ.png)
+
+> [Tera Orb pixel art by Skylightningz](https://www.newgrounds.com/art/view/skylightningz/tera-orb-pixel-art)
+
+---
+
+### 🧪 Blank Tera Shards
+
+Basic item used to craft or convert into **Typed Tera Shards**.
+
+---
+
+## 🔄 Obtaining Typed Tera Shards
+
+Typed Tera Shards are created by **right-clicking specific blocks or entities** with a Blank Tera Shard.  
+This consumes the Blank Tera Shard and grants a shard of a specific type.
+
+| Type     | How to Obtain                                                                 |
+|----------|--------------------------------------------------------------------------------|
+| **Normal**   | Crafting a Blank Tera Shard alone (shapeless recipe)                       |
+| **Fighting** | Right-click a *Bamboo Block*                                               |
+| **Fire**     | Right-click a *Magma Block*                                                |
+| **Water**    | Right-click a *Wet Sponge*                                                 |
+| **Electric** | Right-click a *Copper Block*                                               |
+| **Grass**    | Right-click a *Wheat Crop*                                                 |
+| **Ice**      | Right-click *Powder Snow*                                                  |
+| **Rock**     | Right-click *Bedrock*                                                      |
+| **Steel**    | Right-click an *Iron Block*                                                |
+| **Poison**   | Right-click a *Potato Crop*                                                |
+| **Ghost**    | Right-click *Soul Sand*                                                    |
+| **Dark**     | Right-click *Reinforced Deepslate*                                         |
+| **Fairy**    | Right-click an *Amethyst Block*                                            |
+| **Dragon**   | Right-click an *Ender Chest*                                               |
+| **Bug**      | Right-click a *Beehive*                                                    |
+| **Psychic**  | Right-click an *Enchanting Table*                                          |
+| **Ground**   | Right-click a *Mud Block*                                                  |
+| **Flying**   | Right-click a *Glass Block* at **Y level 100+**                            |
+| **Stellar**  | Right-click a *Terapagos* (entity)                                         |
+
+---
+
+## 🎨 Optional Textures
+
+This mod supports an **optional texture pack** to improve the visual identification of the **Tera Orb** and **Tera Shards**.
+
+- 📥 **Download**: See this repository under _“NikosTera Resourcepack”_
+- 📜 **License**: The Tera Shard textures are licensed under **AGPL-3.0** by [PageFaultGames](https://github.com/pagefaultgames)
+- ⚠️ **Note**: These textures are **not required** for the mod to function and are **not included** in the `.jar` file
+
+---
+
+## 📄 License
+
+- The mod itself is licensed under **GPL-3.0**
+- Optional textures are licensed under **AGPL-3.0** and distributed separately
