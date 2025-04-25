@@ -25,6 +25,8 @@ Used to obtain the ability to **Terastalize**.
 
 Basic item used to craft or convert into **Typed Tera Shards**.
 
+![Blank Tera Shard](https://i.imgur.com/fznT0VQ.png)
+
 ---
 
 ## 🔄 Obtaining Typed Tera Shards
