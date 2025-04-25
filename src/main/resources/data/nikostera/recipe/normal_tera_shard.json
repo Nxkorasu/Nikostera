@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "nikostera:blank_tera_shard"
+    }
+  ],
+  "result": {
+    "id": "nikostera:normal_tera_shard",
+    "count": 1
+  }
+}

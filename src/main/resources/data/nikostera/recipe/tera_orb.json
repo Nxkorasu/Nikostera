@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IGI",
+    "GDG",
+    "IGI"
+  ],
+  "key": {
+    "D": {
+      "item": "cobblemon:poke_ball"
+    },
+    "I": {
+      "item": "minecraft:diamond"
+    },
+    "G": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "result": {
+    "id": "zcrystals:tera_orb",
+    "count": 1
+  }
+}
