@@ -70,5 +70,5 @@ This mod supports an **optional texture pack** to improve the visual identificat
 
 ## 📄 License
 
-- The mod itself is licensed under **GPL-3.0**
+- The mod itself is licensed under **CC BY-NC-SA 4.0**
 - Optional textures are licensed under **AGPL-3.0** and distributed separately
