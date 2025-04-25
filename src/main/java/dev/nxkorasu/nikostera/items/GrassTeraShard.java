@@ -1,0 +1,46 @@
+package dev.nxkorasu.nikostera.items;
+
+import com.cobblemon.mod.common.api.types.tera.TeraTypes;
+import com.cobblemon.mod.common.entity.pokemon.PokemonEntity;
+import dev.nxkorasu.nikostera.manager.ItemDeleter;
+import dev.nxkorasu.nikostera.polymer.TeraObjects;
+import eu.pb4.polymer.core.api.item.SimplePolymerItem;
+import eu.pb4.polymer.resourcepack.api.PolymerModelData;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemUsageContext;
+import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.text.Text;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.Formatting;
+import net.minecraft.util.Hand;
+import org.jetbrains.annotations.Nullable;
+
+public class GrassTeraShard extends SimplePolymerItem {
+    PolymerModelData modelData;
+    public GrassTeraShard(Settings settings, Item polymerItem) {
+        super(settings, polymerItem);
+    }
+    boolean test = false;
+    @Override
+    public Item getPolymerItem(ItemStack itemStack, @Nullable ServerPlayerEntity player){
+        return super.getPolymerItem(itemStack,player);
+    }
+
+    @Override
+    public int getPolymerCustomModelData(ItemStack itemStack, @Nullable ServerPlayerEntity player){
+        this.modelData = TeraObjects.grassTeraShardModelData;
+        return this.modelData.value();
+    }
+    @Override
+    public ActionResult useOnEntity(ItemStack itemStack, PlayerEntity playerEntity, LivingEntity livingEntity, Hand hand) {
+        if(livingEntity instanceof PokemonEntity pokemonEntity){
+            pokemonEntity.getPokemon().setTeraType(TeraTypes.getGRASS());
+            ItemDeleter.deleteItemStack(playerEntity);
+            playerEntity.sendMessage(Text.literal("Pokemon´s Teratype Changed to "+TeraTypes.getGRASS().getDisplayName()).formatted(Formatting.GREEN),true);
+        }
+        return ActionResult.PASS;
+    }
+}
