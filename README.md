@@ -52,7 +52,7 @@ This consumes the Blank Tera Shard and grants a shard of a specific type.
 | **Psychic**  | Right-click an *Enchanting Table*                                          |
 | **Ground**   | Right-click a *Mud Block*                                                  |
 | **Flying**   | Right-click a *Glass Block* at **Y level 100+**                            |
-| **Stellar**  | Right-click a *Terapagos* (entity)                                         |
+| **Stellar**  | Right-click a *Terapagos* (Pokemon)                                        |
 
 ---
 
