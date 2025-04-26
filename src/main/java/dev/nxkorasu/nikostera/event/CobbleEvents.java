@@ -10,5 +10,6 @@ public class CobbleEvents {
         CobblemonEvents.POKEMON_SENT_POST.subscribe(Priority.NORMAL, TeraGlowHandler::switchIn);
         CobblemonEvents.BATTLE_FLED.subscribe(Priority.NORMAL,TeraGlowHandler::leaveBattle);
         CobblemonEvents.BATTLE_VICTORY.subscribe(Priority.NORMAL,TeraGlowHandler::winBattle);
+        CobblemonEvents.POKEMON_CAPTURED.subscribe(Priority.NORMAL,TeraGlowHandler::capturedPokemon);
     }
 }
