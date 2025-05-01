@@ -59,7 +59,7 @@ This consumes the Blank Tera Shard and grants a shard of a specific type.
 ## Credits
 
 > **[Tera Orb pixel art by Skylightningz](https://www.newgrounds.com/art/view/skylightningz/tera-orb-pixel-art)**  
-> **[Tera Shard Sprites by Marcie](https://marcie.carrd.co)**
+> **[Tera Shard Sprites by Lichen](https://eeveeexpo.com/threads/6672/#post-68069)**
 
 ---
 
