@@ -40,7 +40,7 @@ public class FairyTeraShard extends SimplePolymerItem {
             if(!pokemonEntity.getExposedSpecies().getName().equalsIgnoreCase("ogerpon") && !pokemonEntity.getExposedSpecies().getName().equalsIgnoreCase("terapagos")) {
                 pokemonEntity.getPokemon().setTeraType(TeraTypes.getFAIRY());
                 ItemDeleter.deleteItemStack(playerEntity);
-                playerEntity.sendMessage(Text.literal("Pokemon´s Teratype Changed to " + TeraTypes.getFAIRY().getDisplayName()).formatted(Formatting.GREEN), true);
+                playerEntity.sendMessage(Text.literal("Pokemon´s Teratype Changed to Fairy").formatted(Formatting.GREEN), true);
             }else{
                 playerEntity.sendMessage(Text.literal("That pokemon is Unable to change Tera Type...").formatted(Formatting.RED), true);
             }

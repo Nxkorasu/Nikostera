@@ -40,7 +40,7 @@ public class DarkTeraShard extends SimplePolymerItem {
             if(!pokemonEntity.getExposedSpecies().getName().equalsIgnoreCase("ogerpon") && !pokemonEntity.getExposedSpecies().getName().equalsIgnoreCase("terapagos")) {
                 pokemonEntity.getPokemon().setTeraType(TeraTypes.getDARK());
                 ItemDeleter.deleteItemStack(playerEntity);
-                playerEntity.sendMessage(Text.literal("Pokemon´s Teratype Changed to " + TeraTypes.getDARK().getDisplayName()).formatted(Formatting.GREEN), true);
+                playerEntity.sendMessage(Text.literal("Pokemon´s Teratype Changed to Dark").formatted(Formatting.GREEN), true);
             }else{
                 playerEntity.sendMessage(Text.literal("That pokemon is Unable to change Tera Type...").formatted(Formatting.RED), true);
             }

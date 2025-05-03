@@ -40,7 +40,7 @@ public class StellarTeraShard extends SimplePolymerItem {
             if(!pokemonEntity.getExposedSpecies().getName().equalsIgnoreCase("ogerpon")) {
                 pokemonEntity.getPokemon().setTeraType(TeraTypes.getSTELLAR());
                 ItemDeleter.deleteItemStack(playerEntity);
-                playerEntity.sendMessage(Text.literal("Pokemon´s Teratype Changed to " + TeraTypes.getSTELLAR().getDisplayName()).formatted(Formatting.GREEN), true);
+                playerEntity.sendMessage(Text.literal("Pokemon´s Teratype Changed to Stellar").formatted(Formatting.GREEN), true);
             }else{
                 playerEntity.sendMessage(Text.literal("That pokemon is Unable to change Tera Type...").formatted(Formatting.RED), true);
             }
