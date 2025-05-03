@@ -4,6 +4,7 @@
   "package": "dev.nxkorasu.nikostera.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "PacketFixMixin"
   ],
   "client": [
   ],
