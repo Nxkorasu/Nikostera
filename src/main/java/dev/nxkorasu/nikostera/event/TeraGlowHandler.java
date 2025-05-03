@@ -112,6 +112,12 @@ public class TeraGlowHandler {
         //Just clear the last fed flower slot for each pokemon
         for (BattlePokemon pokemon : team) {
             pokemon.getEffectedPokemon().setLastFlowerFed(new ItemStack(Items.AIR,1));
+            if (pokemon.getEffectedPokemon().getSpecies().getName().equals("Terapagos")) {
+                new StringSpeciesFeature("tera_form", "terastal").apply(pokemon.getOriginalPokemon());
+            }
+            if (pokemon.getEffectedPokemon().getSpecies().getName().equals("Ogerpon")) {
+                new FlagSpeciesFeature("embody_aspect", false).apply(pokemon.getOriginalPokemon());
+            }
         }
     }
 
