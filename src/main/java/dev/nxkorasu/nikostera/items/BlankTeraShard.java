@@ -133,7 +133,6 @@ public class BlankTeraShard extends SimplePolymerItem {
         }else{
             player.sendMessage(Text.literal("An Error Occurred, please hold only the Blank Tera Shard").formatted(Formatting.RED),true);
         }
-        ItemDeleter.deleteItem(itemUsageContext);
         return ActionResult.PASS;
     }
 
