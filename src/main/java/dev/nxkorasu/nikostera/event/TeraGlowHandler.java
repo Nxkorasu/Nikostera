@@ -83,6 +83,7 @@ public class TeraGlowHandler {
 
     public static Unit switchIn(PokemonSentPostEvent pokemonSentPostEvent) {
         LivingEntity pokemon = pokemonSentPostEvent.getPokemon().getEntity();
+        Pokemon pk = pokemonSentPostEvent.getPokemon();
         //If the pokemon has a barrier on its last flower fed slot, give it glow
         if (pokemonSentPostEvent.getPokemon().getLastFlowerFed().getItem().equals(Items.BARRIER)) {
             if (pokemon.getWorld() instanceof ServerWorld serverLevel) {
@@ -97,6 +98,12 @@ public class TeraGlowHandler {
                     team.setColor(color);
                 }
                 scoreboard.addScoreHolderToTeam(pokemon.getUuid().toString(), team);
+                if (pk.getSpecies().getName().equalsIgnoreCase("terapagos")) {
+                    new StringSpeciesFeature("tera_form", "terastal").apply(pk);
+                }
+                if (pk.getSpecies().getName().equalsIgnoreCase("ogerpon")) {
+                    new FlagSpeciesFeature("embody_aspect", false).apply(pk);
+                }
                 pokemon.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, Integer.MAX_VALUE, 0));
             }
         }
